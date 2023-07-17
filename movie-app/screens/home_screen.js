@@ -39,7 +39,6 @@ export default function HomeScreen() {
         if (data && data.results) setTopRated(data.results)
     }
 
-
     return (
         <View className="flex-1 bg-neutral-800">
             <SafeAreaView className={`mb-5 ${mrg}`}>
@@ -47,7 +46,7 @@ export default function HomeScreen() {
                 <View className="flex-row justify-between items-center mx-4">
                     <Bars3CenterLeftIcon size="30" strokeWidth={2} color="white" />
                     <Text className="font-bold text-white text-3xl">
-                        Movies<Text style={style.text}>Hub</Text>
+                        Movies<Text style={style.text}>Flix</Text>
                     </Text>
                     <TouchableOpacity onPress={() => navigation.navigate('Search')}>
                         <MagnifyingGlassIcon size={30} strokeWidth={2} color={"white"} />
@@ -69,8 +68,6 @@ export default function HomeScreen() {
 
                 )
             }
-
         </View>
-        // <Image source={require('../assets/images/tmp.png')} style={{ width: 100, height: 200 }} />
     )
 }
